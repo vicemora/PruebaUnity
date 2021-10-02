@@ -23,7 +23,7 @@ public class CoinSpawner : MonoBehaviour
     public void mostrarMoneda(){
         GameObject monedita1 = Instantiate(MonedaPrefab);
         float xr=Random.Range(-5.0f,5.0f);
-        float yr=5.0f;
+        float yr=6.0f;
         monedita1.transform.position= new Vector3(xr,yr,0);  
         Moneda.contMon+=1;
     }

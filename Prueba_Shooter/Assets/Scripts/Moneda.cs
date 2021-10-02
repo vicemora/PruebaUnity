@@ -23,8 +23,16 @@ public class Moneda : MonoBehaviour
         gameObject.transform.position.y -0.01f,0f); 
     }
     
+    void OnCollisionEnter2D(Collision2D collision){
+        print(collision.gameObject.name);
+        if (collision.gameObject.name.Equals("Nave")){
+            Destroy(gameObject);
+        }
+    }
+
     void OnBecameInvisible(){
         contMon-=1;
         Destroy(gameObject);
     }
+    
 }
