@@ -26,6 +26,7 @@ public class EnemySpawnerScript : MonoBehaviour
             xPos = Random.Range(-11f, 11f);
             posXY = new Vector3(xPos, 5.65f, 0f);
             enemySpawned = Instantiate(enemy, posXY, Quaternion.identity);
+            
         }
     }
 
